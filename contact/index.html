@@ -4,11 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact — Drinks By Neat</title>
-  <meta name="description" content="Get in touch with Andreas Sanidiotis. Twenty-minute consults for hotels, restaurant groups, and rooms opening or refreshing a beverage program in the next twelve months." />
+  <meta name="description" content="Get in touch with Andreas Sanidiotis. Twenty-minute consults for hotels, restaurant groups, and rooms opening or refreshing a beverage program." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..700,0..100,0..1&family=Inter:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" />
 
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="icon" href="/assets/images/favicon.ico" />
@@ -23,7 +23,7 @@
         <a href="/services/">Services</a>
         <a href="/blog/">Notes</a>
         <a href="/about/">About</a>
-        <a href="/contact/" aria-current="page" class="site-nav__cta">Get in touch</a>
+        <a href="/contact/" aria-current="page">Contact</a>
       </nav>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-controls="siteNav" aria-expanded="false">
         <span></span>
@@ -34,15 +34,33 @@
   <main>
 
     <section class="hero container">
-      <p class="eyebrow hero__eyebrow">Contact</p>
-      <h1 class="hero__headline">Let&rsquo;s have a conversation.</h1>
-      <p class="hero__body">Twenty minutes is usually enough for both of us to know if there&rsquo;s a fit. Direct email lands faster than the contact form on most weeks.</p>
+      <div class="hero__top">
+        <p class="hero__index">
+          <span>07 — Contact</span>
+          <span>Direct &amp; quick</span>
+        </p>
+        <p class="hero__location">
+          <strong>Reply window</strong><br/>
+          One business day
+        </p>
+      </div>
+
+      <h1 class="hero__headline" data-reveal>Let&rsquo;s have<br/><em>a conversation.</em></h1>
+
+      <div class="hero__bottom">
+        <p class="hero__body" data-reveal>Twenty minutes is usually enough for both of us to know if there&rsquo;s a fit. Direct email lands faster than any contact form on most weeks.</p>
+        <p class="hero__meta" data-reveal>
+          <strong>Email</strong> &nbsp;·&nbsp; usually within one business day<br/>
+          <strong>Weekend</strong> &nbsp;·&nbsp; reply by Monday end-of-day<br/>
+          <strong>Time zone</strong> &nbsp;·&nbsp; Eastern (NYC)
+        </p>
+      </div>
     </section>
 
-    <section class="section container">
+    <section class="container" style="padding-top: 0; padding-bottom: var(--section-y);">
       <div class="contact-grid">
 
-        <div>
+        <div class="contact-block">
           <div class="contact-method">
             <h3>Email</h3>
             <p><a href="mailto:andreas@drinksbyneat.com">andreas@drinksbyneat.com</a></p>
@@ -50,12 +68,12 @@
 
           <div class="contact-method">
             <h3>Book a call</h3>
-            <p><a href="https://calendly.com/drinksbyneat/consultation" target="_blank" rel="noopener">Calendly — 20-minute consult</a></p>
+            <p><a href="https://calendly.com/drinksbyneat/consultation" target="_blank" rel="noopener">Calendly — twenty-minute consult</a></p>
           </div>
 
           <div class="contact-method">
             <h3>Based in</h3>
-            <p>New York City. On-site work anywhere.</p>
+            <p>New York City &mdash; on-site work anywhere</p>
           </div>
 
           <div class="contact-method">
@@ -69,16 +87,26 @@
         </div>
 
         <div>
-          <h3 style="font-family: var(--sans); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.5rem;">What helps in a first email</h3>
+          <p class="eyebrow" style="margin-bottom: 2rem;">What helps in a first email</p>
 
-          <ul style="list-style: none; padding: 0; margin: 0;">
-            <li style="padding: 0.6rem 0; border-top: 1px solid var(--rule); font-size: 1.0625rem; line-height: 1.5; color: var(--ink-soft);"><strong style="color: var(--ink);">Who you are.</strong> The room, the group, the role.</li>
-            <li style="padding: 0.6rem 0; border-top: 1px solid var(--rule); font-size: 1.0625rem; line-height: 1.5; color: var(--ink-soft);"><strong style="color: var(--ink);">What you&rsquo;re working on.</strong> Opening date, refresh trigger, scale of program.</li>
-            <li style="padding: 0.6rem 0; border-top: 1px solid var(--rule); font-size: 1.0625rem; line-height: 1.5; color: var(--ink-soft);"><strong style="color: var(--ink);">The shape of the engagement you have in mind.</strong> A single package, a hybrid, or &ldquo;we&rsquo;re not sure yet.&rdquo;</li>
-            <li style="padding: 0.6rem 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); font-size: 1.0625rem; line-height: 1.5; color: var(--ink-soft);"><strong style="color: var(--ink);">When you need to start.</strong></li>
-          </ul>
-
-          <p class="meta" style="margin-top: 2rem;">Replies typically within one business day. Anything sent over the weekend gets a reply by Monday end-of-day.</p>
+          <div class="contact-block">
+            <div class="contact-method">
+              <h3>01 — Who you are</h3>
+              <p>The room, the group, the role.</p>
+            </div>
+            <div class="contact-method">
+              <h3>02 — What you&rsquo;re working on</h3>
+              <p>Opening date, refresh trigger, scale of program.</p>
+            </div>
+            <div class="contact-method">
+              <h3>03 — The shape of the engagement</h3>
+              <p>A single package, a hybrid, or &ldquo;we&rsquo;re not sure yet.&rdquo;</p>
+            </div>
+            <div class="contact-method">
+              <h3>04 — When you need to start</h3>
+              <p>Sooner = more useful conversation.</p>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -90,8 +118,8 @@
     <div class="site-footer__inner">
       <div class="site-footer__top">
         <div class="site-footer__brand">
-          <h2>Beverage programs that hold up the food.</h2>
-          <p>Drinks By Neat is the practice of Andreas Sanidiotis — a beverage consultant based in New York, working with hotels, restaurant groups, and rooms that want their bar program to keep up.</p>
+          <h2>Beverage programs that <em>hold up the food.</em></h2>
+          <p>Drinks By Neat is the practice of Andreas Sanidiotis &mdash; a beverage consultant based in New York, working with hotels, restaurant groups, and rooms that want their bar program to keep up.</p>
         </div>
         <div>
           <h4>Site</h4>
@@ -114,24 +142,33 @@
         </div>
       </div>
       <div class="site-footer__bottom">
-        <span>© 2026 Drinks By Neat.</span>
-        <span><a href="/privacy-policy.html" style="color: rgba(244,239,228,0.6);">Privacy Policy</a></span>
+        <span>© 2026 Drinks By Neat</span>
+        <span><a href="/privacy-policy.html" style="color: rgba(246,242,231,0.55); border-bottom: none;">Privacy Policy</a></span>
       </div>
     </div>
   </footer>
 
   <script>
-    const header = document.getElementById('siteHeader');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 8) header.classList.add('scrolled');
-      else header.classList.remove('scrolled');
-    });
     const navToggle = document.getElementById('navToggle');
     const siteNav = document.getElementById('siteNav');
     navToggle.addEventListener('click', () => {
       const open = siteNav.classList.toggle('open');
       navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
+    const reveals = document.querySelectorAll('[data-reveal]');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+      reveals.forEach(el => io.observe(el));
+    } else {
+      reveals.forEach(el => el.classList.add('in-view'));
+    }
   </script>
 
 </body>
