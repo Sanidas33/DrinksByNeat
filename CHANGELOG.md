@@ -63,7 +63,7 @@ These are the things that would push the site from "much better than what's ther
 
 3. **Calendly link** in the Contact page is a placeholder URL. Set up your real booking link and swap.
 
-4. **Email address.** Contact page uses `andreas@drinksbyneat.com` — confirm this routes correctly.
+4. **Email address.** Contact page uses `sani@drinksbyneat.com` — confirm this routes correctly.
 
 5. **OG image.** The `/assets/images/og-image.jpg` referenced for social sharing doesn't exist yet. Once photography is in, generate a 1200×630 OG image.
 
