@@ -21,22 +21,23 @@ a { color: inherit; text-decoration: none; }
 
 :root {
   /* Type */
-  --serif: "Fraunces", "Iowan Old Style", "Apple Garamond", Garamond, "Times New Roman", serif;
-  --sans:  "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  --mono:  "IBM Plex Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  --serif: "Young Serif", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --serif-italic: "Instrument Serif", Didot, "Bodoni MT", Georgia, serif;
+  --sans:  "Hanken Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --mono:  "Space Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 
-  /* Color — after hours: warm near-black, candlelight brass, cream type */
-  --bg:        #171310;          /* warm espresso near-black */
-  --bg-soft:   #201B15;          /* lifted surface for hover */
-  --bg-dark:   #100D0A;          /* deepest — footer, quote band */
-  --ink:       #EDE5D2;          /* warm cream */
-  --ink-2:     #C7BBA4;          /* secondary text */
-  --muted:     #8F8470;          /* warm grey */
-  --rule:      #3A3327;          /* hairline on dark */
-  --rule-soft: #2B2519;
-  --accent:    #C89E63;          /* candlelight brass */
-  --accent-2:  #DDB87E;          /* brighter brass for hover */
-  --accent-warm: #8CA07C;        /* sage, demoted to secondary */
+  /* Color — Negroni Hour: burgundy base, Campari pop, pistachio aside, cream type */
+  --bg:        #331013;          /* deep negroni burgundy */
+  --bg-soft:   #401619;          /* lifted surface for hover */
+  --bg-dark:   #260A0C;          /* deepest — footer, quote band */
+  --ink:       #F7E9D2;          /* aperitivo cream */
+  --ink-2:     #E2C9AC;          /* secondary text */
+  --muted:     #B08A75;          /* rosy warm grey */
+  --rule:      #5C2B27;          /* hairline on burgundy */
+  --rule-soft: #48201D;
+  --accent:    #F4562E;          /* Campari orange-red */
+  --accent-2:  #FF7B52;          /* brighter for hover */
+  --accent-warm: #BFCF9C;        /* pistachio, for asides */
 
   /* Layout */
   --content-max:   1400px;
@@ -56,7 +57,6 @@ body {
   font-size: 18px;
   line-height: 1.65;
   font-weight: 400;
-  font-feature-settings: "ss01", "ss02", "cv11";
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
@@ -67,17 +67,16 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-family: var(--serif);
-  font-weight: 420;
+  font-weight: 400;
   color: var(--ink);
-  letter-spacing: -0.02em;
-  font-variation-settings: "opsz" 144;
-  line-height: 1.02;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
 }
 
 h1 {
-  font-size: clamp(2.5rem, 8vw, 6.5rem);
-  line-height: 0.98;
-  letter-spacing: -0.035em;
+  font-size: clamp(2.3rem, 7vw, 5.5rem);
+  line-height: 1.02;
+  letter-spacing: -0.015em;
   font-weight: 400;
 }
 
@@ -180,7 +179,7 @@ p + p { margin-top: 1em; }
   top: 0; left: 0; right: 0;
   z-index: 50;
   padding: 1.25rem 0;
-  background: rgba(23, 19, 16, 0.78);
+  background: rgba(51, 16, 19, 0.8);
   backdrop-filter: blur(10px) saturate(140%);
   -webkit-backdrop-filter: blur(10px) saturate(140%);
   border-bottom: 1px solid transparent;
@@ -1122,7 +1121,7 @@ p + p { margin-top: 1em; }
   grid-template-columns: 2fr 1fr 1fr;
   gap: clamp(2rem, 4vw, 4rem);
   padding-bottom: 4rem;
-  border-bottom: 1px solid rgba(237,229,210,0.18);
+  border-bottom: 1px solid rgba(247,233,210,0.18);
 }
 .site-footer__brand h2 {
   font-family: var(--serif);
@@ -1137,7 +1136,7 @@ p + p { margin-top: 1em; }
 }
 .site-footer__brand h2 em { font-style: italic; color: var(--accent); }
 .site-footer__brand p {
-  color: rgba(237,229,210,0.7);
+  color: rgba(247,233,210,0.7);
   font-size: 0.97rem;
   max-width: 38ch;
   line-height: 1.6;
@@ -1147,7 +1146,7 @@ p + p { margin-top: 1em; }
   font-size: 0.7rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(237,229,210,0.5);
+  color: rgba(247,233,210,0.5);
   margin-bottom: 1.25rem;
   font-weight: 400;
 }
@@ -1159,14 +1158,14 @@ p + p { margin-top: 1em; }
   padding-bottom: 1px;
   transition: border-color 200ms var(--ease);
 }
-.site-footer ul a:hover { border-bottom-color: rgba(237,229,210,0.5); }
+.site-footer ul a:hover { border-bottom-color: rgba(247,233,210,0.5); }
 .site-footer__bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 2.5rem;
   font-size: 0.74rem;
-  color: rgba(237,229,210,0.45);
+  color: rgba(247,233,210,0.45);
   letter-spacing: 0.04em;
   font-family: var(--mono);
   flex-wrap: wrap;
@@ -1311,3 +1310,47 @@ html { scrollbar-color: var(--rule) var(--bg); scrollbar-width: thin; }
   background: linear-gradient(90deg, transparent, var(--accent) 30%, var(--accent) 70%, transparent);
   opacity: 0.5;
 }
+
+
+/* ==========================================================================
+   Negroni Hour — expressive italics & retro details
+   ========================================================================== */
+
+h1 em, h2 em, h3 em, h4 em,
+.site-header__brand em,
+.pull-quote em,
+.work-row__title em,
+.featured-note__title em,
+.note-row__title em {
+  font-family: var(--serif-italic);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 1.06em;
+}
+
+/* Young Serif is heavy — give big display type air */
+h2 { letter-spacing: -0.005em; }
+.hero__headline { max-width: 17ch; }
+.work-row__title { letter-spacing: -0.005em; }
+
+/* Weight sans body slightly up for dark bg */
+body { font-weight: 430; }
+
+/* Campari glow replaces brass candlelight */
+.hero::before {
+  background: radial-gradient(55% 45% at 72% 28%, rgba(244, 86, 46, 0.12), transparent 70%) !important;
+}
+
+/* Pistachio moments: eyebrow labels & tags on hover rows */
+.work-row:hover .work-row__tags strong,
+.note-row:hover .note-row__tag { color: var(--accent-warm); }
+.hero__location strong, .hero__index span:first-child { color: var(--accent-warm); }
+
+/* Buttons: Campari fill, cream text */
+.btn { background: var(--accent); border-color: var(--accent); color: #FFF6E8; }
+.btn:hover { background: var(--accent-2); border-color: var(--accent-2); color: #331013; }
+.btn--ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
+
+/* Selection */
+::selection { background: var(--accent); color: #FFF6E8; }
