@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page Not Found — Drinks By Neat</title>
+  <meta name="description" content="That page has been eighty-sixed." />
+  <meta property="og:title" content="Page Not Found — Drinks By Neat" />
+  <meta property="og:description" content="That page has been eighty-sixed." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://drinksbyneat.com/404.html" />
+  <meta property="og:image" content="https://drinksbyneat.com/assets/images/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://drinksbyneat.com/assets/images/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair:ital,wdth,wght@0,87.5..112.5,300..900;1,87.5..112.5,300..900&family=Inter:wght@400;600;700&family=Oswald:wght@400;500&display=swap" />
+  <link rel="canonical" href="https://drinksbyneat.com/404.html" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/assets/images/favicon.ico" sizes="48x48" />
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
+  <meta name="theme-color" content="#F9F2E8" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="/" class="site-header__brand" aria-label="Drinks By Neat — Home">Drinks By <em class="brand-em">Neat</em></a>
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <a href="/work/">Work</a>
+        <a href="/services/">Services</a>
+        <a href="/blog/">Notes</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a class="btn btn--solid" href="https://calendly.com/drinksbyneat/15" target="_blank" rel="noopener">Book a call</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-controls="siteNav" aria-expanded="false">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="error-page container">
+      <p class="eyebrow">404</p>
+      <h1>Not on the <em>menu.</em></h1>
+      <p>The page you&rsquo;re after has been eighty-sixed — or never existed.</p>
+      <div class="hero__cta" style="justify-content:center;">
+        <a class="btn btn--solid" href="/">Back to the homepage</a>
+        <a class="btn btn--outline" href="/blog/">Read the Notes</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__top">
+        <div class="site-footer__brand">
+          <h2>Drinks By <em class="brand-em">Neat</em></h2>
+          <p>Beverage consultancy. Andreas Sanidiotis. New York — on-site anywhere.</p>
+        </div>
+        <div>
+          <h4>Site</h4>
+          <ul>
+            <li><a href="/work/">Work</a></li>
+            <li><a href="/services/">Services</a></li>
+            <li><a href="/blog/">Notes</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/beverage-consultant/">Beverage Consultant</a></li>
+            <li><a href="/cocktail-consultant/">Cocktail Consultant</a></li>
+            <li><a href="/bar-program-development/">Bar Programs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Elsewhere</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/drinksbyneat/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/andreas-sanidiotis/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://x.com/sanidiotis" target="_blank" rel="noopener">X / Twitter</a></li>
+            <li><a href="mailto:sani@drinksbyneat.com">sani@drinksbyneat.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <span>© 2026 Drinks By Neat</span>
+        <span><a href="/privacy-policy.html">Privacy Policy</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const siteNav = document.getElementById('siteNav');
+    navToggle.addEventListener('click', () => {
+      const open = siteNav.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  </script>
+
+</body>
+</html>
